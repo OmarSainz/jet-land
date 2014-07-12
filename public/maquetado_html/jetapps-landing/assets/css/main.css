@@ -72,7 +72,8 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background-color: #34495e;
+	background: url('../img/bg.png');
+    background-size: cover;
 	padding-top: 60px;
 }
 
@@ -105,6 +106,20 @@ a:after {
 
 }
 
+.navbar-default {
+    background: #fcf5f5;
+}
+
+.navbar-nav > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.btn.btn-large.btn-success {
+    padding: 13px 25px;
+}
+
+
 /* intro Products */
 
 #intro {
@@ -121,17 +136,59 @@ a:after {
 	font-size: 20px;
 }
 
+.centered > img {
+    width: 250px;
+    height: 270px;
+}
+
 /* Showcase Wrap */
 
 #showcase {
 	display: block;
-	background-color: #34495e;
+	background-color: #ccc;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-#showcase h1 {
-	color: white;
+#showcase h2 {
+	color: #670e7d;
+}
+
+.social-media a {
+    color: transparent;
+    background: url('../img/sprite.png');
+    background-size: 232px 50px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 48px;
+    margin: 0 14px;
+}
+
+.social-media a:hover {
+    opacity: 1;
+}
+
+.social-media .tt {
+    background-position: -118px 0;
+}
+
+.social-media .g {
+    background-position: -60px 0;
+}
+
+.social-media .y {
+    background-position: -180px 0;
+}
+
+.subscribe-social {
+    margin-top: 84px;
+}
+
+.subscribe-social input[type="email"] {
+    width: 300px;
 }
 
 #footerwrap {
