@@ -1,120 +1,164 @@
 doctype html
 html(lang="es")
-head
-	meta(charset='UTF-8')
-	title JetApps &bull; Tower
-	meta(http-equiv="X-UA-Compatible", content="IE=edge")
-	meta(name="viewport", content="width=device-width, initial-scale=1")
-	link(rel="stylesheet", href="app/vendor/bootstrap/dist/css/bootstrap.min.css")
-body
-	div(class="jumbotron")
-		div(class="container")
-			nav(class="navbar navbar-default", role="navigation")
-				div(class="navbar-header")
-					button(type="button", class="navbar-toggle", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
-						span(class="sr-only") Toggle navigation
-						span(class="icon-bar")
-						span(class="icon-bar")
-						span(class="icon-bar")
-					a(class="navbar-brand", href="#") JetApps 
-
-				div(class="collapse navbar-collapse", id="bs-example-navbar-collapse-1")
-					ul(class="nav navbar-nav")
-						li(class="active")
-							a(href="#") Home
-						li
-							a(href="#") Services
-						li
-							a(href="#") About
-						li
-							a(href="#") Contact
-						li
-							a(href="#") Blog
-
-			div(class="row text-center")
-				h1 Title 
-				h3 Slogan 
-				form(role="form")
-					div(class="form-group")
-						label(for="inputEmail1") Email address
-						input(type="email", class="form-control", id="inputEmail1", placeholder="Enter email")
-					a(href="#", type="submit", class="btn btn-default") Submit
-	<!-- End of jumbotron -->
-
-	div(class="services")
-		div(class="container")
-			div(class="services-web text-center")
-				div(class="col-md-4")
-					span(class="icon-sprite sprite-web") &nbsp;
-					h4 Service #1 
-					p Info about Service #1 
-					a(class="more" href="#") Read More
-
-				div(class="col-md-4")
-					span(class="icon-sprite sprite-web") &nbsp;
-					h4 Service #1 
-					p Info about Service #1 
-					a(class="more" href="#") Read More
-
-				div(class="col-md-4")
-					span(class="icon-sprite sprite-web") &nbsp;
-					h4 Service #1 
-					p Info about Service #1 
-					a(class="more" href="#") Read More
-			
-	div(class="about")
-		div(class="container text-center")
-			div(class="row")
-				div(class="col-md-6")
-					img(class="hidden-xs", src="app/img/plan.png", alt="")
-				div(class="col-md-6")
-					h4 What is JetApps?
-					p Info about what is JetApps
-
-			div(class="row")
-				div(class="col-md-6")
-					h4 Why JetApps?
-					p Info about what is JetApps
-				div(class="col-md-6")
-					img(class="hidden-xs", src="app/img/plan.png", alt="")
-
-	div(class="call-to-action")
-		div(class="container")
-			div(class="row")
-				h2 Do you like what you see?
-					a(class="btn btn-default", href="") Contact!
-
-	div(class="contact-info")
-		div(class="container")
-			div(class="row")
-				div(class="col-md-4")
-					div(class="location,  text-center")
-						span(class="icon-sprite  sprite-loc") &nbsp;
-						h6 Location
-						p Santo Domingo, Dominican Republic
-
-				div(class="col-md-4")
-					div(class="location,  text-center")
-						span(class="icon-sprite  sprite-loc") &nbsp;
-						h6 Email
-						p me@jetapps.io
-
-				div(class="col-md-4")
-					div(class="location,  text-center")
-						span(class="icon-sprite  sprite-loc") &nbsp;
-						h6 Phone
-						p +234453645645
-	footer
-		div(class="container")
-			div(class="row")
-				div(class="col-md-6")
-					div(class="copyright, text-center")
-						<small>2014 JetApps Corporation. 
-				div(class="col-md-6")
-					div(class="social-icons text-center")
-						a(href="#")
-							span(class="icon-sprite sprite-tw") &nbsp;
-						a(href="#")
-							span(class="icon-sprite sprite-fb") &nbsp;
-						a(href="#")
-							span(class="icon-sprite sprite-gp") &nbsp;
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description", content="Landing page JetApps")
+    meta(name="author", content="Frontend team JetaApps")
+    link(rel="shortcut icon", href="app/assets/ico/favicon.png")
+    title JetApps Landing
+    link(href="app/assets/css/bootstrap.css", rel="stylesheet")
+    link(href="app/assets/css/main.css", rel="stylesheet")
+    link(href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic", rel="stylesheet", type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Raleway:400,300,700", rel="stylesheet", type="text/css")
+    script(src="app/assets/js/jquery.min.js")
+    script(src="app/assets/js/smoothscroll.js")
+  body(data-spy="scroll", data-offset="0", data-target="#navigation")
+    #navigation.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href="#")
+            img(src="app/assets/img/logo.png", alt="")
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a.smothscroll(href="#home") Home
+            li
+              a.smothscroll(href="#prod") Product
+            li
+              a.smothScroll(href="#support") Support
+            li
+              a.smothScroll(href="#doc") Doc
+        
+    section#home(name="home")
+    #headerwrap
+      .container
+        .row.centered
+          .col-lg-12
+            h1
+              | Welcome To
+              b JetApps
+            h3 Let"s Fly to Code!
+            br
+            form(role="form", action="#", method="post", enctype="plain")
+              .form-group.subscribe.centered
+                input#emai1.form-control(type="email", name="email", placeholder="Your Email")
+              br
+              button.btn.btn-large.btn-success(type="submit") Subscribe to alpha version
+            br
+            br
+     
+    section#prod(name="prod")
+    #intro
+      .container
+        .row.centered
+          .col-lg-4
+            img(src="app/assets/img/icon-settings.png", alt="")
+            h3 Easy Apps Settings
+            p You must to use our panel control and see how easy can be to deploy an app!
+          .col-lg-4
+            img(src="app/assets/img/icon-cloud.png", alt="")
+            h3 Develop Fastest
+            p
+              | Do you think you what is speed? You only need
+              strong jet deploy
+              | and voil&#224;! You don"t have to worry about configuration, this is real speed.
+          .col-lg-4
+            img(src="app/assets/img/icon-plane.png", alt="")
+            h3 Flying on the Jet!
+            p What are you waiting for? Let"s see the real world in an amazing machine! 
+        br
+        hr
+    .row.centered
+      h1 Tweet infos
+      hr
+    br
+    // WORK OF CODE xD
+    #features
+      .container
+        .row
+          .col-lg-6.centered
+            img.centered(src="app/assets/img/icon-clipboard.png", alt="", width="600px", height="300px")
+          .col-lg-6
+            h3 Some Features
+            br
+            // ACCORDION
+            #accordion2.accordion.ac
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href="#collapseOne")
+                    | Support
+               
+                #collapseOne.accordion-body.collapse.in
+                  .accordion-inner
+                    p
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href="#collapseTwo")
+                    | Featured 2
+                #collapseTwo.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href="#collapseThree")
+                    | Featured 3
+                #collapseThree.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              br
+              .accordion-group
+                .accordion-heading
+                  a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href="#collapseFour")
+                    | Featured 4
+                #collapseFour.accordion-body.collapse
+                  .accordion-inner
+                    p
+                      | It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              br
+    section#support(name="support")
+    #showcase
+      .container
+        .row
+          h2.centered Hey don"t forget to visit us!
+          br
+          .col-lg-8.col-lg-offset-2
+            .social-media.centered
+              a.sprite.fb(href="/") Facebook
+              a.sprite.g(href="/") Google+
+              a.sprite.tt(href="/") Twitter
+              a.sprite.y(href="/") YouTube
+          .row
+            .centered.subscribe-social
+              form(role="form", action="#", method="post", enctype="plain")
+                .form-group.subscribe.centered
+                  input#emai1.form-control(type="email", name="email", placeholder="Your Email")
+                br
+                button.btn.btn-large.btn-success(type="submit") Subscribe to alpha version
+      // /container
+    section#doc(name="doc")
+    #footerwrap
+      .container
+        .col-lg-5
+          | Social
+        .col-lg-7
+          | Tweet infos
+        #c
+          .container
+            p
+              | links
+              a(href="#") Link 1
+       
+        script(src="app/assets/js/bootstrap.js")
+        script
+          $('.carousel').carousel({
+          interval: 3500
+          })
