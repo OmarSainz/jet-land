@@ -13,6 +13,8 @@ html(lang="es")
     link(href="http://fonts.googleapis.com/css?family=Raleway:400,300,700", rel="stylesheet", type="text/css")
     script(src="app/assets/js/jquery.min.js")
     script(src="app/assets/js/smoothscroll.js")
+    script(src="socket.io/socket.io.js")
+    script(src="app/assets/js/main.js")
   body(data-spy="scroll", data-offset="0", data-target="#navigation")
     #navigation.navbar.navbar-default.navbar-fixed-top
       .container
@@ -158,7 +160,4 @@ html(lang="es")
               a(href="#") Link 1
        
         script(src="app/assets/js/bootstrap.js")
-        script
-          $('.carousel').carousel({
-          interval: 3500
-          })
+        script $('.carousel').carousel({interval: 3500})

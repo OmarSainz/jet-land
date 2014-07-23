@@ -157,13 +157,13 @@ a:after {
 .social-media a {
     color: transparent;
     background: url('../img/sprite.png');
-    background-size: 232px 50px;
+    background-size: 232px 60px;
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 60px;
     display: inline-block;
     vertical-align: middle;
-    height: 48px;
+    height: 58px;
     margin: 0 14px;
 }
 
