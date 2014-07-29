@@ -221,3 +221,8 @@ a:after {
 	color: white
 }
 
+
+/* Tweets section */
+.tweets {
+   border: 1px solid red; 
+}
