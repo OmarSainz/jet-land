@@ -35,7 +35,7 @@ html(lang="es")
               a.smothScroll(href="#support") Support
             li
               a.smothScroll(href="#doc") Doc
-        
+
     section#home(name="home")
     #headerwrap
       .container
@@ -46,14 +46,14 @@ html(lang="es")
               b JetApps
             h3 Let"s Fly to Code!
             br
-            form(role="form", action="#", method="post", enctype="plain")
+            form(role="form", action="/subscribe", method="POST")
               .form-group.subscribe.centered
                 input#emai1.form-control(type="email", name="email", placeholder="Your Email")
               br
               button.btn.btn-large.btn-success(type="submit") Subscribe to alpha version
             br
             br
-     
+
     section#prod(name="prod")
     #intro
       .container
@@ -72,7 +72,7 @@ html(lang="es")
           .col-lg-4
             img(src="app/assets/img/icon-plane.png", alt="")
             h3 Flying on the Jet!
-            p What are you waiting for? Let"s see the real world in an amazing machine! 
+            p What are you waiting for? Let"s see the real world in an amazing machine!
         br
     .row.centered
       .col-md-10.col-md-offset-1
@@ -96,7 +96,7 @@ html(lang="es")
                 .accordion-heading
                   a.accordion-toggle(data-toggle="collapse", data-parent="#accordion2", href="#collapseOne")
                     | Support
-               
+
                 #collapseOne.accordion-body.collapse.in
                   .accordion-inner
                     p
@@ -160,6 +160,6 @@ html(lang="es")
             p
               | links
               a(href="#") Link 1
-       
+
         script(src="app/assets/js/bootstrap.js")
         script $('.carousel').carousel({interval: 3500})
